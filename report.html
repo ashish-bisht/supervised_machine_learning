@@ -12870,6 +12870,16 @@ Look at the graph at the bottom left from the cell above(the visualization creat
 This is done by building a model from training set and then building another model from it which will correct the errors and it will go on until the training set can predict perfectly or maximum number of models are added.</p>
 <p>AdaBoost is best to use with decision tree with level one as these trees will be short and will contain only a decision.</p>
 <p>AdaBoost also helps to reduce the overfitting in models.</p>
+<p>Example:
+Suppose we need to find if a person is getting more than 50 k.</p>
+<p>Then we will use Adaboost by combining several weak learners(decision trees), to create a strong classifier that can predict whether an individual earns above 50k or not.</p>
+<p>Then each of the weak learners are created using features like age,occupation,eductaion,capital loss etc.
+Which will be provided with some rules to get the information.</p>
+<p>Then we will train the data and during the training process Adaboost algorithm looks at learners where it has predicted badly, and it will take care of these learners(error one's) in next round.</p>
+<p>With each round, the model finds the best learner , and it will go on until the training set can predict perfectly or maximum number of models are added.</p>
+<p>All the learners are then combined to make a final strong model, where all the weal learners can predict if a person earns more than 50k or not.</p>
+<p>And then we will count all the outcomes from all the learners and add them up to get final prediction.</p>
+<p>And after this we can further predict if the person can give donations or not.</p>
 
 </div>
 </div>
